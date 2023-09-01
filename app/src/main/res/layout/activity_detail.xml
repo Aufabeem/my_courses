@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <View
+        android:id="@+id/bg_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:background="@drawable/bg_main_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/detail_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="67dp"
+        android:elevation="4dp"
+        android:src="@drawable/foro_profil"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/mregular"
+        android:text="@string/detail_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_image" />
+
+    <TextView
+        android:id="@+id/detail_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mlight"
+        android:text="@string/status_detail"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_name" />
+
+    <TextView
+        android:id="@+id/detail_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="75dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/bg_white_medium"
+        android:elevation="5dp"
+        android:fontFamily="@font/mlight"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:text="Every Sun &amp; Mon \n 8 a.m."
+        android:textColor="@color/app_blue_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/content_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="46dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_schedule">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/mlight"
+            android:text="@string/subject"
+            android:textColor="@color/app_blue_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detail_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:fontFamily="@font/mmedium"
+            android:text="Math and Physics"
+            android:textColor="@color/app_blue_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/mlight"
+            android:text="@string/address"
+            android:textColor="@color/app_blue_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:fontFamily="@font/mmedium"
+            android:text="Meteseh, Tembalang"
+            android:textColor="@color/app_blue_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/mlight"
+            android:text="@string/number"
+            android:textColor="@color/app_blue_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:fontFamily="@font/mmedium"
+            android:text="+62 831 1234 1234"
+            android:textColor="@color/app_blue_light"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="35dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_detail">
+
+        <TextView
+            android:id="@+id/skill_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_skill"
+            android:fontFamily="@font/mlight"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:text="Singing"
+            android:textColor="@color/app_blue_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_skill"
+            android:fontFamily="@font/mlight"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:text="Tennis"
+            android:textColor="@color/app_blue_light" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
